@@ -1,0 +1,19 @@
+div{
+    background-color: black;
+}
+
+p{
+    text-decoration-color: pink;
+}
+
+li{
+    font-size: 16pt0;
+}
+
+li ol {
+   font-family: 'Courier New', Courier, monospace; 
+}
+
+li ul {
+    font-family: Arial, Helvetica, sans-serif;
+}
