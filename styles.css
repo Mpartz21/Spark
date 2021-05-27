@@ -3,17 +3,16 @@ div{
 }
 
 p{
-    text-decoration-color: pink;
-}
+color: pink;}
 
 li{
     font-size: 16pt0;
 }
 
-li ol {
+ol li {
    font-family: 'Courier New', Courier, monospace; 
 }
 
-li ul {
+ul li {
     font-family: Arial, Helvetica, sans-serif;
 }
