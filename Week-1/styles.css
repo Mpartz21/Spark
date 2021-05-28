@@ -3,7 +3,8 @@ div{
 }
 
 p{
-color: pink;}
+color: pink;
+}
 
 li{
     font-size: 16pt0;
@@ -16,3 +17,9 @@ ol li {
 ul li {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+div.column{
+    width: 50%;
+    float: left;
+}
+
