@@ -16,7 +16,8 @@ console.log("Your favorite movie is", favMovie);
 /* Your turn 
 Ask the user a question.
 Print the result */
-
+let favCharacter = prompt("Who is you favorite fictional character ?");
+console.log("Your favorite character is ", favCharacter);
 
 /*Exmaple
 Recall the alert function from the Hello World assignment.
@@ -28,6 +29,9 @@ alert("Your favorite movie is "+ favMovie);
 Use alert to print 
 The result of your question is ___ 
 ___ is the actual result. */
+
+alert("Your favorite character is "+ favCharacter);
+
 
 /* Explanation
 alert, console.log, and prompt are all built in
