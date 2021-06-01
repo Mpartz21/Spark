@@ -19,7 +19,9 @@ The name of this variable should be candyIsHealthy.
 Assign this variable a boolean value.
 Print the value of candyIsHealthy to the console.
 */
+const candyIsHealthy = false;
 
+console.log(candyIsHealthy);
 
 /*Example*/
 //Number
@@ -32,6 +34,7 @@ Create a variable using the keyword var.
 The variable can be named whatever you want. 
 Assign it a number */
 
+var whateverYouWant = 156;
 //Numbers can be expressed within this range
 console.log(Number.MIN_VALUE+" to "+ Number.MAX_VALUE);//Prints the range of all Number types in JavaScript.
 /*Explanation
@@ -43,7 +46,7 @@ and the largest is roughly 1.7977 * 10^(308) */
 Type in this comment, next to Answer, a whole number that you think 
 given the above information might not be accurately represented using the
 number datatype. 
-Answer: 
+Answer: 1
 */
 
 /*Example*/
@@ -65,6 +68,9 @@ Also note- if you do a calculation with bigints every number that is involved
 must be a bigint- having an n appended to it or by being converted using BigInt(). 
 */
 
+let myNumber = BigInt(whateverYouWant)+0n;
+console.log(myNumber);
+console.log(typeof(myNumber));
 
 /*Example*/
 console.log("\n\nString example:");
