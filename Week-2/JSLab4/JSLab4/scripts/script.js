@@ -86,6 +86,8 @@ Assign a string value to a variable you created earlier
 that holds a number. 
 Note you don't need to redefine the variable to assign it a new value.  
 Print it to the console.*/ 
+whateverYouWant =("whatever");
+
 
 /*Explanation 
 JavaScript is dynamically typed which allows us to 
@@ -126,6 +128,13 @@ and print the result of using typeof
 on your variable. 
 Then assign your new variable a value and use typeof
 again- printing out the result.*/
+var myOwnVariable;
+
+console.log(typeof myOwnVariable);
+
+myOwnVariable = 25;
+
+console.log(typeof myOwnVariable);
 
 
 //The final primitive is Symbol.
