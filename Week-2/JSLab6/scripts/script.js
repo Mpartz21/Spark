@@ -10,7 +10,7 @@ var name = prompt("Enter your name.");
 console.log(name);
 
 //Finally, fix the following code so that it alerts 
-//users that my favorite food is sushi.
+//users that my favorite food is su2shi.
 
 let food = "sushi";
 console.log("My favorite food is "+food);
