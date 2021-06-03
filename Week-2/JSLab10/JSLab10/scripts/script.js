@@ -17,7 +17,7 @@ let input = prompt("Do you like cookies?\n"
                     +"y for yes");//saves the result of the user input in the variable input
 
 if(input ==="y"){
-    console.log("We can be friends");
+    console.log("Double Chocolate Chip");
 }else{
     console.log("It was nice knowing you.");
 }
@@ -42,6 +42,11 @@ at following the instructions.
 
 Hint: && and || allow you to combine conditional statements
 */
+if(number>0 && number < 11){
+    alert("nice job ");
+}else{
+    alert("Do better.");
+}
 
 /*Example 
 What if we want to check multiple conditions? 
@@ -73,6 +78,17 @@ than 9 runs. */
  prints the message, “x is less than or equal to 0”. 
  Write an else-statement to prints the message, 
  “x is none of the other options”. */
+ var x = 'a';
+
+ if(x == 3){
+     console.log("x is equal to 3");
+ }else if(x > 5){
+     console.log("x is greater than 5");
+ }else if(x <= 0){
+     console.log("x is less than or equal to 0");
+ }else{
+     console.log("x is none of the other options");
+ }
 
  /*Example 
  We can also 'nest' our if statements within one another. 
@@ -97,3 +113,15 @@ If they say yes. Prompt them to ask if they want sprinkles.
 If they say no to ice cream add another fruit to the array. 
 */
 let array = ["apples","strawberries"];
+let iceCreram = prompt("Do you like ice cream? y/n" );
+if(iceCreram == 'y'){
+    let sprinkles = prompt("Would you like sprinkles? y/n");
+    if (sprinkles =='y'){
+        array.push('iceCreram','sprinkles');
+    }else if(sprinkles =='n'){
+        array.push('iceCreram');
+    }
+}else{
+    array.push('Orange');
+}
+console.log(array);
