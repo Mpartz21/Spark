@@ -1,20 +1,20 @@
 /*Modify the code below so that it prints out 
 the last element in the array. */
 let primitives = ["string", 0.0, true, 1n, null, undefined, "Symbol... whatever that is"];
-console.log(primitives[primitives.length]);
+console.log(primitives[primitives.length - 1]);
 
 /*Modify the code so that it adds "dinner" 
 to the end of the array*/
 const squareMeals = 3; 
 let array = new Array(3);
-array.join("dinner");
+array.push("dinner");
 console.log(array);
 
 
 /*Modify the code below so that it 
 prints 6 (without just printing the value, that's too easy)*/
 let number = 5;
-console.log(number++);
+console.log(++number);
 
 /*
 Rori wants to figure out her weekly budget. 
@@ -29,6 +29,10 @@ let rent = 1000.00;
 let loans = 200.00;
 let carPayMent = 200.00;
 let payPerMonth = 3000.00;
+let numberOfWeeks = 4;
+let amountOfHerBills = rent + loans + carPayMent ;
+
+budgetPerWeek = ( payPerMonth - amountOfHerBills ) / numberOfWeeks;
 
 console.log("Rori has $"+budgetPerWeek+" to spend per week.");
 
@@ -40,7 +44,7 @@ calculates Rori's weekly budget including savings
 */
 
 let savings = 100; 
-budgetPerWeek = payPerMonth - rent - loans - carPayMent- savings/4;
+budgetPerWeek = (payPerMonth - (rent + loans + carPayMent + savings))/4;
 console.log("Rori can spend $"+budgetPerWeek+" if she saves "+savings+"/month.");
 
  

@@ -110,7 +110,7 @@ Print the result.*/
 
 result = oddArray.join(",");
 console.log(result);
-
+  
 
 
 /*Bonus: Look up another function to interact with arrays
