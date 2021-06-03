@@ -28,7 +28,7 @@ Print the result to the console. */
 
 b = "0";
 a = 0;
-console.log( "0 == '0'" + a == b);
+console.log("0 == '0'" , a == b);
 
 /*Example 
 === 
@@ -58,7 +58,8 @@ Compare two numbers using the less than operator.
 Print the result. 
 Compare two strings using the less than operator. 
 */
-
+console.log("34 < 98" , 34 < 98);
+console.log("thisString < thatString" , "thisString" < "thatString" );
 
 /*Example 
 The or opertor 
@@ -72,6 +73,7 @@ console.log("false || true", solution);
 
 /*Your turn
 Assign solution the result of a and b*/
+solution = a && b ;
 
 console.log("false && true",solution);
 
@@ -101,6 +103,7 @@ console.log("!(falsy value)", !____);
 
 Fill in the blank with a falsy value that isn't the keyword false.
 */
+console.log("!(falsy value)", !null);
 
 //Finished! Nice work! Remeber these things for 
 //the conditional blocks lab. 
