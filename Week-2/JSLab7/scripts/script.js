@@ -32,7 +32,9 @@ Create a variable oddArray that holds an array
 with the values
 3 5 7 13
 */
+var oddArray = [3,5,7,13];
 
+console.log(oddArray);
 /*Example 
 Now we will access the values
 in array*/
@@ -52,6 +54,8 @@ begin at 0.*/
 Print the second element or item in your oddArray.
 */
 
+console.log("oddArray postion 2 : " + oddArray[1]);
+
 /*Note we get undefined if we choose an index that is out 
 of bounds of the array.*/ 
 
@@ -64,7 +68,9 @@ console.log("Now at position 0: "+array[0]);
 /*Your turn
 Update your oddArray to hold 9 instead of 13. 
 Print the result*/
+oddArray[3] = 9;
 
+console.log("New Array O   rder: " + oddArray);
 /*Example
 Get the length of an array*/
 console.log("The length of the array is "+array.length);
@@ -89,6 +95,8 @@ the end of them. */
 /*Your turn
 Add 13 and 15 on to the end of oddArray. 
 Print out the length of oddArray. */ 
+oddArray.push(13,15);
+console.log(oddArray);
 
 /*Example
 Create a string from a given array*/
@@ -99,6 +107,10 @@ console.log(result);
 Create a string from your oddArray,
 but ensure the numbers are seperated by commas.
 Print the result.*/
+
+result = oddArray.join(",");
+console.log(result);
+
 
 
 /*Bonus: Look up another function to interact with arrays
