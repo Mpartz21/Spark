@@ -34,8 +34,11 @@ Line 17 tells lines 12-14 to run with a = 1 and b=2.
 /*Your turn 
 Create a function called difference. Return the first parameter 
 minus the second. */
+function difference(a,b){
+    return a-b;
+}
 
-
+console.log(difference(1,2));
 /*Example 
 Create an anonymous function- one without a name.*/
 
@@ -56,3 +59,7 @@ It should also execute at least one other instruction of your choosing.
 
 Call your anonymous function. */
 
+let whyld = function(){
+    console.log("Hammerhead sharks have a full 360 view of thier surroundings thanks to thier head shape");
+}
+console.log(whyld);
