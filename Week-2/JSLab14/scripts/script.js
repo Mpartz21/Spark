@@ -9,7 +9,7 @@ let totalCost = quantity * pricePerUnit;
 
 
 console.log("You ordered " + quantity + " units at a base price of $" + pricePerUnit + " per unit");
-if(pricePerUnit > 100){
+if(quantity> 100){
   totalCost = totalCost -(totalCost * .10) ;
 }  
 console.log("Your total cost is $" + totalCost);
@@ -24,6 +24,17 @@ console.log("Your total cost is $" + totalCost);
 		
 // Hint: How do you know one number X is a multiple of Y? If dividing X by Y produces no remainder.
 
+for(let i = 1;i < 101; i++){
+  if(i % 3 ==0 && i % 5 ==0){
+    console.log("FizzBuzz");
+  }else if(i % 3 == 0){
+    console.log("Fizz");
+  }else if(i % 5 ==0){
+    console.log("Buzz");
+  }else{
+  console.log(i)
+  }
+}
 
 
 // The following code should print the following pattern:
@@ -36,11 +47,11 @@ console.log("Your total cost is $" + totalCost);
 		
 // debug the code so it prints correctly.
 		
-// for (let i = 5; i > 1; i++) {
-//     let s="";
-//     for (let j = i; j >= 1; j--){
-// 		s+="*";
-//     }
-//     console.log(s); 
-// }	
+for (let i = 5; i > 0; i--) {
+    let s="";
+    for (let j = i; j >= 1; j--){
+		s+="*";
+    }
+    console.log(s); 
+}	
 // hint: There are several logical errors here.
