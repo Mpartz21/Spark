@@ -45,6 +45,13 @@ Create an object and assign it properties
 and values using dot notation. 
 Print it out.*/
 
+var myComputer = new Object();
+myComputer.cpu = ("3600");
+myComputer.gpu = ("580");
+myComputer.ram = ("16 gb");
+console.log(myComputer);
+
+
 /*Example
 We can also use bracket notation 
 to define and assign values to our properties.
@@ -59,6 +66,9 @@ console.log("New property using bracket notation", obj);
 /*Your turn
 Add a new property to your object using brackets.*/
 
+myComputer["Memory"] = "3 tb HDD";
+console.log(myComputer);
+
 /*Example
 Defining objects using curly braces. 
 */
@@ -72,3 +82,6 @@ console.log(importantDates);
 /*Your turn 
 Add thanksgiving and the date in the format above
 to the importantDates object.*/
+ 
+importantDates["Thanksgiving"] ="2019-11-28";
+console.log(importantDates);
