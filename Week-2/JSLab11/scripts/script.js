@@ -44,8 +44,22 @@ that prints out the numbers 1-5.
 Write equivalent versions of the loop using 
 while and do while loops. 
 */ 
+console.log("For");
 for(let number = 1; number<=5; number++){
     console.log(number);
+}
+number = 1;
+console.log("Do,While");
+
+do{
+    console.log(number);
+    number++;
+}while(number < 6);
+
+console.log("While");
+number = 1;
+while(number < 6){
+    console.log(number++);
 }
 
 /*Example 
@@ -65,3 +79,13 @@ for (let j = 1; j<9; j++){
 /*Your turn
 Uses a do-while loop to print only the odd number between
 1 and 9, inclusive. */
+
+number = 1;
+console.log("Odd 1 through 9 ");
+
+do{
+    if(number%2 != 0){
+        console.log(number);
+    }
+    ++number;
+}while(number < 10);
