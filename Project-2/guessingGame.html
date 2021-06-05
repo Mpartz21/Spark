@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <script>
+        let min = 0;
+        let max = 10;
+        let target = Math.random() * (max - min + 1); 
+        target = Math.floor(target) + min;
+        let guess = 0; 
+
+        while(guess != target){
+            guess = prompt("Guess a number ");
+
+            if(guess < target){
+                alert("TOO LOW");
+            }else if(guess > target){
+                alert("TOO HIGH");
+            }else{
+                alert("YOU GOT IT");
+            }
+        }
+
+    </Script>
+
+</head>
+<body>
+    
+</body>
+</html>
