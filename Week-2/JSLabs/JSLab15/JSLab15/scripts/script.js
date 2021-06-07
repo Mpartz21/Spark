@@ -140,5 +140,16 @@ It should then add the input color value to the inputValues element.
 Finally add an event listener on your form that calls 
 your function when you click submit.*/
 
+function addColor(event){
+    event.preventDefault();
+    let colorPicked = document.getElementById("colorPicked").value;
+    console.log(colorPicked);
+    let inputNames = document.getElementById("inputValues");
+    let nameElement = document.createElement("h3");
+    nameElement.innerHTML =colorPicked;
+    inputNames.appendChild(nameElement);
+}
+document.getElementById("favColor").addEventListener("submit",addColor);
+
 //Great work! Now zip up the JSLab16 folder and submit it. 
 
