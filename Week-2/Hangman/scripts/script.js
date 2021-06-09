@@ -20,8 +20,6 @@ let strikes = 0;
 // incorrectly guessed.
  drawWordProgress();
 // run this now, to draw the empty word at the start of the game.
-
-
 // Manipulates the DOM to write all the strike letters to the
 // appropriate section in hangman.html
 function drawStrikeLetters() {
