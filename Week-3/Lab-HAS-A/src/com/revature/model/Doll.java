@@ -2,6 +2,7 @@ package com.revature.model;
 
 public class Doll extends Toy {
 	String eyeColor; 
+	Outfit outfit = new Outfit();
 
 	  //constructors
 	  public Doll() {
@@ -10,7 +11,6 @@ public class Doll extends Toy {
 	  }
 
 	  public Doll(String name, String eyeColor){
-		
 	    super(name);
 	    this.eyeColor = eyeColor;
 	  }
@@ -26,7 +26,9 @@ public class Doll extends Toy {
 
 	  //other methods
 	  public void makeTalk(){
+		 this.outfit.wear(); 
 	     System.out.println("Hi everyone! I AM-A doll");
+	     this.play();
 	  }
 
 }
