@@ -5,7 +5,7 @@ public class Room extends fixtures.Fixture {
 	
 	public Room(String name,String shortDescription,String longDescription) {
 		super(name, shortDescription, longDescription);
-		this.exits = new Room[0]; // size is your choice
+		this.exits = new Room[1]; // size is your choice
 		
 	}
 

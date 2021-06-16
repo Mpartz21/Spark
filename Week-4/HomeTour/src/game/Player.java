@@ -3,18 +3,27 @@ package game;
 import fixtures.Room;
 
 public class Player {
-	Room startingRoom;
-	//the room a player should start in.
-	Room[] rooms;
-	//all the rooms in the house.
-	public void init() {
-	    Room foyer = new Room(
-			"The Foyer",
-			"a small foyer",
-			"The small entryway of a neo-colonial house. A dining room is open to the south, where a large table can be seen." + "\n"
-			+ "The hardwood floor leads west into doorway, next to a staircase that leads up to a second floor." + "\n"
-			+ "To the north is a small room, where you can see a piano.");
-			this.rooms[0] = foyer;
-	        this.startingRoom = foyer;
+	private String playerName;
+
+	private Room currentRoom ;
+	//current room
+	public Player(String playerNames){
+		this.playerName = playerNames;
 	}
+	public String getCurrentRoomName(){
+		return this.currentRoom.getName();
+	}
+	
+	public void setCurrentRoom(Room room) {
+		this.currentRoom = room;
+	}
+	
+	public String getPlayerName() {
+		return this.playerName;
+	}
+	
+	public void setPlayerName(String playerName) {
+		this.playerName = playerName;
+	}
+	
 }
