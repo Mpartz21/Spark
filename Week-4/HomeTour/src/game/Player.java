@@ -10,6 +10,9 @@ public class Player {
 	public Player(String playerNames){
 		this.playerName = playerNames;
 	}
+	public Room getCurrentRoom(){
+		return this.currentRoom;
+	}
 	public String getCurrentRoomName(){
 		return this.currentRoom.getName();
 	}
