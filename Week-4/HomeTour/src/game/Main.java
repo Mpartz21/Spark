@@ -23,7 +23,7 @@ public class Main {
 		
 		player.setCurrentRoom(roomManager.getStartingRoom());
 		
-		
+//		player.getCurrentRoom().setExits("start",roomManager.getStartingRoom());
 		
 		System.out.println(player.getCurrentRoomName());
 		
