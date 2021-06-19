@@ -1,31 +1,32 @@
 package fixtures;
 
+import java.util.Map;
+
 public class Room extends fixtures.Fixture {
-	private Room[] exits;
+	private Map<String,Room> exits;
 	
-	public Room(String name,String shortDescription,String longDescription,int exits) {
+	public Room(String name,String shortDescription,String longDescription) {
 		super(name, shortDescription, longDescription);
-		this.exits = new Room[exits]; // size is your choice
 	}
 	
-	public void setExits(Room[] exits) {
-		this.exits = exits;
+	public void setExits(String direction,Room room) {
+		exits.put(direction, room);
 	}
 
-	public Room[] getExits() {
+	public Map<String, Room> getExits() {
 		return this.exits;
 	}
 		
 	public Room getExit(String direction) {
 		switch(direction.toLowerCase()) {
 		case "north":
-			return this.exits[0];
+			return exits.get(direction);
 		case "east":
-			return this.exits[1];
+			return exits.get(direction);
 		case "south":
-			return this.exits[2];
+			return exits.get(direction);
 		case "west":
-			return this.exits[3];
+			return exits.get(direction);
 		default:
 			System.out.println("What was that? Try again.");
 			return null;
