@@ -1,21 +1,19 @@
 package game;
 
+import java.util.Scanner;
+
 import fixtures.Room;
 
 public class Player {
 	private String playerName;
 
-	private Room currentRoom ;
+	private Room currentRoom;
 	//current room
-	public Player(String playerNames){
-		this.playerName = playerNames;
-	}
+	
 	public Room getCurrentRoom(){
 		return this.currentRoom;
 	}
-	public String getCurrentRoomName(){
-		return this.currentRoom.getName();
-	}
+	
 	
 	public void setCurrentRoom(Room room) {
 		this.currentRoom = room;
@@ -25,8 +23,12 @@ public class Player {
 		return this.playerName;
 	}
 	
-	public void setPlayerName(String playerName) {
-		this.playerName = playerName;
+	public void setPlayerName() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("What's your name?");
+		
+		String playersName = scanner.next();
+		this.playerName = playersName;		
 	}
 	
 }

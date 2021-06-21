@@ -1,9 +1,10 @@
 package fixtures;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class Room extends fixtures.Fixture {
-	private Map<String,Room> exits;
+	private Map<String,Room> exits = new HashMap<>();
 	
 	public Room(String name,String shortDescription,String longDescription) {
 		super(name, shortDescription, longDescription);
@@ -18,20 +19,12 @@ public class Room extends fixtures.Fixture {
 	}
 		
 	public Room getExit(String direction) {
-		switch(direction.toLowerCase()) {
-		case "north":
-			return exits.get(direction);
-		case "east":
-			return exits.get(direction);
-		case "south":
-			return exits.get(direction);
-		case "west":
-			return exits.get(direction);
-		default:
-			System.out.println("What was that? Try again.");
-			return null;
-
+		for(String keyDirection : exits.keySet()) {
+			if(keyDirection.startsWith(direction.toLowerCase().intern())) {
+				return exits.get(keyDirection);	
+			}
 		}
+		return null;
 	}
 }
  
